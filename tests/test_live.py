@@ -90,7 +90,7 @@ def allowed_outbound_link(absolute):
     if parts.scheme != "https":
         return False
     prefix = ALLOWED_LINK_HOSTS.get((parts.hostname or "").lower())
-    return prefix is not None and parts.path.startswith(prefix)
+    return prefix is not None and (parts.path or "/").startswith(prefix)
 
 
 @unittest.skipUnless(os.environ.get("RUN_LIVE") == "1", "live tests need RUN_LIVE=1")
