@@ -205,12 +205,11 @@ class CopyTests(unittest.TestCase):
 
 
 class IndexTests(unittest.TestCase):
-    def test_hook_options_comment_after_front_matter(self):
+    def test_hook_options_comment_removed_once_chosen(self):
+        # Becky picked the heading 2026-11-17; the drafting note must not ship in page source.
         text = read("index.md")
-        self.assertRegex(
-            text,
-            r"<!-- HOOK OPTIONS for Becky:.*?1\).*?2\).*?3\).*?-->",
-        )
+        self.assertNotIn("HOOK OPTIONS", text)
+        self.assertIn("# No step looked wrong.", text)
 
     def test_index_content(self):
         text = read("index.md")
