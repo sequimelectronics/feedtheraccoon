@@ -1,0 +1,8 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'none'; object-src 'none'">
+{% if page.draft_copy == true or page.draft_copy == "true" %}<meta name="robots" content="noindex">
+{% endif %}
+{% seo %}
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>

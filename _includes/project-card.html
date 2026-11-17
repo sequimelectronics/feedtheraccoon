@@ -1,0 +1,13 @@
+<article class="project-card project-{{ include.project.place }}">
+  <h3>{{ include.project.name }}</h3>
+  <p>{{ include.project.story }}</p>
+  {% if include.project.status == "full" %}
+  <ul class="project-links">
+    {% for link in include.project.links %}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="project-status">Coming soon</p>
+  {% endif %}
+</article>

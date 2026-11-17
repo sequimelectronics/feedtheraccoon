@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <g fill="none" stroke="#2B1D14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 150 C40 146 70 152 96 148 S140 140 160 150 M0 176 L40 170"/>
+    <path d="M60 104 L84 178 M96 98 L110 170"/>
+    <path d="M520 110 L528 300 M580 118 L572 296"/>
+    <path d="M140 262 C220 250 280 256 340 250 S460 258 520 252"/>
+    <path d="M150 296 C200 288 240 300 282 292 S380 298 430 290 S500 296 512 290"/>
+    <path d="M180 282 L200 290 M300 284 L322 292 M410 286 L432 294"/>
+    <path d="M90 222 C180 176 180 196 220 186 S380 182 420 196 S520 196 560 224"/>
+    <path d="M216 186 L234 172 M404 196 L390 184"/>
+    <path d="M250 214 C258 204 268 200 278 204 M360 210 C370 200 384 200 392 208"/>
+  </g>
+  <text x="20" y="344" font-family="serif" font-size="18" font-style="italic" fill="#2B1D14">fox rescue</text>
+</svg>

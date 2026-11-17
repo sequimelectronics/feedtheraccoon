@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <g fill="none" stroke="#2B1D14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 330 C120 318 200 326 260 316"/>
+    <path d="M380 318 C460 326 560 316 640 328"/>
+    <path d="M150 316 C150 214 210 150 320 146 C430 150 490 214 490 316"/>
+    <path d="M226 316 C226 258 262 226 320 224 C378 226 414 258 414 316"/>
+    <path d="M300 226 L312 202 L326 226"/>
+    <path d="M118 318 C112 290 124 270 140 264 M522 318 C528 292 516 272 500 264"/>
+    <path d="M250 188 L238 176 M392 186 L404 174"/>
+    <path d="M60 240 C72 222 90 214 106 216 C118 226 116 240 104 246 C88 252 70 250 60 240"/>
+    <path d="M548 236 C560 222 576 220 588 228 C594 240 586 252 572 252 C558 252 548 246 548 236"/>
+  </g>
+  <text x="20" y="344" font-family="serif" font-size="18" font-style="italic" fill="#2B1D14">cave</text>
+</svg>

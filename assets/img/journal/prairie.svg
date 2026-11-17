@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <g fill="none" stroke="#2B1D14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 96 C60 84 110 92 160 88 S260 78 320 86 S460 94 520 84 S600 80 640 88"/>
+    <path d="M40 300 C160 290 300 306 420 296 S580 300 620 292"/>
+    <path d="M70 300 L62 272 M78 300 L84 268 M86 300 L76 280"/>
+    <path d="M190 298 L182 266 M198 298 L206 262 M206 298 L198 276"/>
+    <path d="M330 300 L322 270 M338 300 L344 264 M346 300 L336 280"/>
+    <path d="M470 298 L462 268 M478 298 L484 262 M486 298 L476 278"/>
+    <path d="M540 300 L534 274 M548 300 L554 270"/>
+    <path d="M420 296 L420 226 M420 226 C404 214 398 198 402 186 M420 226 C436 214 444 200 440 190"/>
+    <path d="M288 296 L290 250 M292 264 C300 254 306 248 312 246"/>
+  </g>
+  <text x="20" y="344" font-family="serif" font-size="18" font-style="italic" fill="#2B1D14">prairie</text>
+</svg>

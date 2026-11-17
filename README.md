@@ -1,0 +1,1 @@
+This repository holds feedtheraccoon.com, the research home of Becky R. Northaven. It is a Jekyll site built for GitHub Pages. Posts are added as Markdown files; see HOW-TO-POST.md for how to post. Content licence: to be decided by Becky.

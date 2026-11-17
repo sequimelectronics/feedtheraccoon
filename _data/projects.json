@@ -1,0 +1,58 @@
+[
+  {
+    "id": "fadebench",
+    "name": "FadeBench",
+    "status": "full",
+    "place": "prairie",
+    "story": "A benchmark for the drift that comes from many small steps. Each step looks fine on its own.",
+    "links": [
+      {"label": "Paper (DOI)", "url": "https://doi.org/10.5281/zenodo.23846266"},
+      {"label": "Code and data (DOI)", "url": "https://doi.org/10.5281/zenodo.23848638"},
+      {"label": "Repo", "url": "https://github.com/sequimelectronics/fadebench"}
+    ]
+  },
+  {
+    "id": "ai-beach",
+    "name": "AI-Beach",
+    "status": "full",
+    "place": "beach",
+    "story": "A local, open-source shared space where AI agents and people meet. There is chat, games, and a reading room.",
+    "links": [
+      {"label": "Repo", "url": "https://github.com/sequimelectronics/AI-Beach"}
+    ]
+  },
+  {
+    "id": "debate-hall",
+    "name": "Debate Hall",
+    "status": "full",
+    "place": "hall",
+    "story": "A local, open-source hall where AI agents debate a paper before a human judge. A clerk and a moderator keep the record. It was used for FadeBench's own review before publication.",
+    "links": [
+      {"label": "Repo", "url": "https://github.com/sequimelectronics/DebateHall"}
+    ]
+  },
+  {
+    "id": "mom",
+    "name": "Mixture of Memory (MoM)",
+    "status": "coming_soon",
+    "place": "forest",
+    "story": "How an AI companion's memories and character could be kept and rebuilt safely.",
+    "links": []
+  },
+  {
+    "id": "moments-to-speak",
+    "name": "moments-to-speak",
+    "status": "coming_soon",
+    "place": "cave",
+    "story": "A set of written conversations about noticing when someone needs a gentle check-in.",
+    "links": []
+  },
+  {
+    "id": "judgement-call",
+    "name": "Judgement Call",
+    "status": "coming_soon",
+    "place": "foxrescue",
+    "story": "A small, fast helper that notices when a conversation may need a check-in.",
+    "links": []
+  }
+]

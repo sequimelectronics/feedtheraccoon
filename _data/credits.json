@@ -1,0 +1,22 @@
+{
+  "forest": {
+    "file": "/assets/img/journal/forest.svg",
+    "alt": "Ink sketch of a forest edge, a few pine trunks and ferns.",
+    "credit": "Placeholder sketch, to be replaced"
+  },
+  "prairie": {
+    "file": "/assets/img/journal/prairie.svg",
+    "alt": "Ink sketch of a burnt prairie, low grass and a far tree line.",
+    "credit": "Placeholder sketch, to be replaced"
+  },
+  "cave": {
+    "file": "/assets/img/journal/cave.svg",
+    "alt": "Ink sketch of a small cave mouth among rocks.",
+    "credit": "Placeholder sketch, to be replaced"
+  },
+  "foxrescue": {
+    "file": "/assets/img/journal/foxrescue.svg",
+    "alt": "Ink sketch of a log laid across a mud pit at a forest edge.",
+    "credit": "Placeholder sketch, to be replaced"
+  }
+}

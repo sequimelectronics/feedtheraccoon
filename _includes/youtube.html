@@ -1,0 +1,16 @@
+{% comment %}
+  Click-to-load video. Usage: {% include youtube.html id="VIDEO_ID" title="..." poster="/assets/img/..." %}
+  Nothing is loaded from YouTube until a reader clicks the poster. assets/js/video.js then swaps in a
+  youtube-nocookie.com iframe. Without JavaScript the poster does nothing; the plain link still works.
+{% endcomment %}
+<figure class="video">
+  <button type="button" class="video-poster" data-video-id="{{ include.id | escape }}" data-video-title="{{ include.title | escape }}">
+    <img src="{{ include.poster | relative_url }}" alt="Play: {{ include.title | escape }}">
+    <span class="video-play" aria-hidden="true">Play</span>
+  </button>
+  <p class="video-watch"><a href="https://www.youtube.com/watch?v={{ include.id | escape }}">Watch on YouTube</a></p>
+  <noscript>
+    <p>The film plays here when JavaScript is on. Use the "Watch on YouTube" link to see it without JavaScript.</p>
+  </noscript>
+</figure>
+<script src="{{ '/assets/js/video.js' | relative_url }}" defer></script>
