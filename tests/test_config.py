@@ -27,8 +27,8 @@ class ConfigTests(unittest.TestCase):
         values, _ = top_level_config()
         self.assertEqual(values.get("title"), "Feed the Raccoon")
         self.assertEqual(values.get("author"), "Becky R. Northaven")
-        self.assertEqual(values.get("url"), "https://sequimelectronics.github.io")
-        self.assertEqual(values.get("baseurl"), "/feedtheraccoon")
+        self.assertEqual(values.get("url"), "https://feedtheraccoon.com")
+        self.assertEqual(values.get("baseurl"), "")
 
     def test_contact_email(self):
         values, _ = top_level_config()

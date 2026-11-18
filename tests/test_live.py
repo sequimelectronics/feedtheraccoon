@@ -20,7 +20,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-BASE = os.environ.get("SITE_BASE", "https://sequimelectronics.github.io/feedtheraccoon").rstrip("/")
+BASE = os.environ.get("SITE_BASE", "https://feedtheraccoon.com").rstrip("/")
 TIMEOUT = 20
 USER_AGENT = "feedtheraccoon-check"
 
