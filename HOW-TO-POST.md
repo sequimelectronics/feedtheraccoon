@@ -48,7 +48,8 @@ This one may start with a slash because the include runs it through relative_url
 ## The rule
 
 - Every change goes in as a pull request, including the site's own maintenance changes. Nothing is pushed straight to `main`.
-- Becky reads the pull request and approves it before it is merged. This holds for maintenance changes to the layout, styles and scripts too.
+- Becky approves every change before it is merged. This holds for maintenance changes to the layout, styles and scripts too.
+- Her approval can come in the pull request or in her chat with the session doing the work. For wording she has approved line by line in chat, that session may merge the pull request itself and then check the live page (Becky, 2026-11-17).
 - Merging is what puts the change live.
 - Before you open a pull request, run the offline tests from the top folder:
 
