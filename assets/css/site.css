@@ -184,7 +184,8 @@ main {
 .note-byline,
 .note-disclosure,
 .note-kicker,
-.note-projects {
+.note-projects,
+.note-thread {
   color: var(--soft);
 }
 
