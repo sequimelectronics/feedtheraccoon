@@ -110,7 +110,8 @@ class ProjectDataTests(unittest.TestCase):
     def test_project_fields(self):
         for p in projects():
             with self.subTest(project=p.get("id")):
-                self.assertEqual(set(p.keys()), {"id", "name", "status", "place", "story", "links"})
+                self.assertEqual(set(p.keys()), {"id", "name", "status", "place", "page", "story", "links"})
+                self.assertTrue(p["page"].startswith("/") and p["page"].endswith("/"))
                 self.assertTrue(p["name"].strip())
                 self.assertTrue(p["story"].strip())
                 for link in p["links"]:
@@ -242,11 +243,11 @@ class FadeBenchPageTests(unittest.TestCase):
 
 
 class AboutTests(unittest.TestCase):
-    def test_projects_section_and_cards(self):
+    def test_about_is_just_about_us(self):
+        # Becky, 2026-11-21: "trim about to just about us". The project cards live on /projects/.
         text = read("about.md")
-        self.assertIn("## Projects {#projects}", text)
-        self.assertIn("site.data.projects", text)
-        self.assertIn("project-card.html", text)
+        self.assertNotIn("project-card.html", text)
+        self.assertIn("project-card.html", read("projects.md"))
 
     def test_bio_links(self):
         self.assertIn("https://sequimelectronics.com", read("about.md"))

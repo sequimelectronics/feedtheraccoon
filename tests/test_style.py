@@ -37,7 +37,7 @@ FONT_SHA256 = {
     "OFL.txt": "f32d22b3908fcad2c86a74000614ec22e6a7f66ea7e867e616026a27aebdc143",
 }
 
-NAV_LABELS = ["Paper", "Code", "Projects", "FadeBench", "About", "Contact"]
+NAV_LABELS = ["FadeBench", "Projects", "Lab Notes", "About", "Contact"]
 
 
 def css_body(css, selector):
@@ -193,9 +193,10 @@ class TokenTests(unittest.TestCase):
         header = read("_includes/header.html")
         labels = re.findall(r'<a href="[^"]*"(?:\{% if [^%]*%\} aria-current="page"\{% endif %\})?>([^<]+)</a>', header)
         self.assertEqual(labels, NAV_LABELS)
-        self.assertIn("https://doi.org/10.5281/zenodo.23846266", header)
-        self.assertIn("https://github.com/sequimelectronics/fadebench", header)
-        self.assertIn("{{ '/about/#projects' | relative_url }}", header)
+        # Paper and Code moved onto the FadeBench page (Becky's site outline, 2026-11-21).
+        for url in ("/fadebench/", "/projects/", "/lab-notes/", "/about/", "/contact/"):
+            with self.subTest(url=url):
+                self.assertIn("{{ '" + url + "' | relative_url }}", header)
 
     def test_footer(self):
         footer = read("_includes/footer.html")

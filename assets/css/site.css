@@ -158,6 +158,49 @@ main {
   border-radius: 0.5rem;
 }
 
+.project-lede {
+  font-size: 1.15rem;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 2px solid var(--edge);
+}
+
+.note-title {
+  font-weight: 700;
+}
+
+.note-meta,
+.note-summary,
+.note-byline,
+.note-disclosure,
+.note-kicker,
+.note-projects {
+  color: var(--soft);
+}
+
+.note-status {
+  display: inline-block;
+  padding: 0 0.5rem;
+  border: 2px solid var(--control-edge);
+  border-radius: 999px;
+  color: var(--ink);
+}
+
+.note-disclosure {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--edge);
+}
+
 .plate {
   margin: 1.5rem 0;
   padding: 0.5rem;
