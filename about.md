@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "About Becky R. Northaven, an independent AI-safety researcher in Sequim, Washington, and her projects."
+description: "About Becky R. Northaven, an independent AI-safety researcher in Sequim, Washington."
 place: cave
 layout: default
 draft_copy: true
@@ -14,9 +14,3 @@ Becky R. Northaven is an independent AI-safety researcher in Sequim, Washington.
 She builds small, local, private AI. She has been a D&D player all her life.
 
 The message is better testing, not less AI.
-
-## Projects {#projects}
-
-{% for project in site.data.projects %}
-{% include project-card.html project=project %}
-{% endfor %}

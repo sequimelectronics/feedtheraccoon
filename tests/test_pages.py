@@ -243,11 +243,11 @@ class FadeBenchPageTests(unittest.TestCase):
 
 
 class AboutTests(unittest.TestCase):
-    def test_projects_section_and_cards(self):
+    def test_about_is_just_about_us(self):
+        # Becky, 2026-11-21: "trim about to just about us". The project cards live on /projects/.
         text = read("about.md")
-        self.assertIn("## Projects {#projects}", text)
-        self.assertIn("site.data.projects", text)
-        self.assertIn("project-card.html", text)
+        self.assertNotIn("project-card.html", text)
+        self.assertIn("project-card.html", read("projects.md"))
 
     def test_bio_links(self):
         self.assertIn("https://sequimelectronics.com", read("about.md"))
