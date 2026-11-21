@@ -33,10 +33,22 @@ Across four small open models, about 4B to 12B, the gap is clear on one (qwen3-8
 - All scenes are low-key fantasy.
 - No frontier model was tested. I do not know yet whether this holds for larger systems.
 
-## The meat
+## Paper v1
 
 - [Read the paper (Zenodo)](https://doi.org/10.5281/zenodo.23846266)
-- [Code and data (Zenodo)](https://doi.org/10.5281/zenodo.23848638)
+- [Read and comment on alphaXiv](https://www.alphaxiv.org/abs/2611.fadebench-incremental-moral-drift)
+
+## Code v1
+
 - [FadeBench on GitHub](https://github.com/sequimelectronics/fadebench)
+- [Code and data (Zenodo)](https://doi.org/10.5281/zenodo.23848638)
+
+## Media v1
+
+Coming soon.
+
+## Notes from the Lab
+
+{% include lab-notes.html project="fadebench" %}
 
 [Back home]({{ '/' | relative_url }})

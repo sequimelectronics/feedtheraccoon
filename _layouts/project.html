@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign project = site.data.projects | where: "id", page.project_id | first %}
+<h1>{{ project.name }}</h1>
+<p class="project-lede">{{ project.story }}</p>
+{{ content }}
+<h2>Code</h2>
+{% if project.status == "full" %}
+<ul class="project-links">
+  {% for link in project.links %}
+  <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="project-status">Coming soon</p>
+{% endif %}
+<h2>Notes from the Lab</h2>
+{% include lab-notes.html project=project.id %}
+<p><a href="{{ '/projects/' | relative_url }}">All projects</a></p>

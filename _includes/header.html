@@ -2,10 +2,9 @@
   <a class="site-name" href="{{ '/' | relative_url }}">Feed the Raccoon</a>
   <nav class="site-nav" aria-label="Main">
     <ul>
-      <li><a href="https://doi.org/10.5281/zenodo.23846266">Paper</a></li>
-      <li><a href="https://github.com/sequimelectronics/fadebench">Code</a></li>
-      <li><a href="{{ '/about/#projects' | relative_url }}">Projects</a></li>
       <li><a href="{{ '/fadebench/' | relative_url }}"{% if page.url == '/fadebench/' %} aria-current="page"{% endif %}>FadeBench</a></li>
+      <li><a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
+      <li><a href="{{ '/lab-notes/' | relative_url }}"{% if page.url == '/lab-notes/' %} aria-current="page"{% endif %}>Lab Notes</a></li>
       <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
       <li><a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a></li>
     </ul>

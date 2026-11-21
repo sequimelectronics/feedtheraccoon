@@ -1,5 +1,5 @@
 <article class="project-card project-{{ include.project.place }}">
-  <h3>{{ include.project.name }}</h3>
+  <h3><a href="{{ include.project.page | relative_url }}">{{ include.project.name }}</a></h3>
   <p>{{ include.project.story }}</p>
   {% if include.project.status == "full" %}
   <ul class="project-links">

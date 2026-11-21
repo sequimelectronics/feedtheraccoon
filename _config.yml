@@ -5,3 +5,14 @@ baseurl: ""
 contact_email: "bnorthaven@feedtheraccoon.com"
 plugins: [jekyll-seo-tag, jekyll-sitemap]
 exclude: [tests, README.md, HOW-TO-POST.md]
+collections:
+  notes:
+    output: true
+    permalink: /lab-notes/:name/
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      draft_copy: true

@@ -1,0 +1,5 @@
+{
+  "published-finding": {"label": "Published finding", "meaning": "From a published paper or a pre-registered result."},
+  "working-note": {"label": "Working note", "meaning": "Work in progress. Not yet published or replicated."},
+  "idea": {"label": "Idea", "meaning": "Something we are thinking about. Not tested yet."}
+}

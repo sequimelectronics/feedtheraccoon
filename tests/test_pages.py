@@ -110,7 +110,8 @@ class ProjectDataTests(unittest.TestCase):
     def test_project_fields(self):
         for p in projects():
             with self.subTest(project=p.get("id")):
-                self.assertEqual(set(p.keys()), {"id", "name", "status", "place", "story", "links"})
+                self.assertEqual(set(p.keys()), {"id", "name", "status", "place", "page", "story", "links"})
+                self.assertTrue(p["page"].startswith("/") and p["page"].endswith("/"))
                 self.assertTrue(p["name"].strip())
                 self.assertTrue(p["story"].strip())
                 for link in p["links"]:

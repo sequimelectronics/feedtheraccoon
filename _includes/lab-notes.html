@@ -1,0 +1,23 @@
+{% comment %}
+  Lists Lab Notes, newest first. Pass project=<id from _data/projects.json> to show only that project's notes.
+{% endcomment %}
+{% assign notes = site.notes | sort: "date" | reverse %}
+{% if include.project %}
+{% assign pid = include.project %}
+{% assign notes = notes | where_exp: "note", "note.projects contains pid" %}
+{% endif %}
+{% if notes.size > 0 %}
+<ul class="note-list">
+  {% for note in notes %}
+  {% assign author = site.data.authors[note.author_id] %}
+  {% assign status = site.data.note_status[note.status] %}
+  <li class="note-item">
+    <a class="note-title" href="{{ note.url | relative_url }}">{{ note.title }}</a>
+    <span class="note-meta"><time datetime="{{ note.date | date_to_xmlschema }}">{{ note.date | date: "%B %-d, %Y" }}</time> · {{ author.name }} · <span class="note-status">{{ status.label }}</span></span>
+    {% if note.description %}<span class="note-summary">{{ note.description }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="note-empty">No notes yet.</p>
+{% endif %}
