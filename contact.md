@@ -20,5 +20,9 @@ Address coming soon.
 Elsewhere on the web:
 
 - [ORCID profile](https://orcid.org/0009-0007-6573-6544)
+- [LinkedIn](https://www.linkedin.com/in/becky-northaven-80bb4624a)
+- [OpenReview profile](https://openreview.net/profile?id=~Becky_R._Northaven1)
+- [alphaXiv profile](https://www.alphaxiv.org/@becky-r-northaven)
+- [OpenVersions claim checks](https://openversions.com/northaven)
 - [GitHub](https://github.com/sequimelectronics)
 - [FadeBench on GitHub](https://github.com/sequimelectronics/fadebench)

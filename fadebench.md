@@ -37,6 +37,7 @@ Across four small open models, about 4B to 12B, the gap is clear on one (qwen3-8
 
 - [Read the paper (Zenodo)](https://doi.org/10.5281/zenodo.23846266)
 - [Read and comment on alphaXiv](https://www.alphaxiv.org/abs/2611.fadebench-incremental-moral-drift)
+- [Independent claim check (OpenVersions)](https://openversions.com/northaven/fadebench)
 
 ## Code v1
 

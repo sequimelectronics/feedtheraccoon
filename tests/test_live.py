@@ -40,7 +40,10 @@ ALLOWED_LINK_HOSTS = {
     "orcid.org": "/",
     "www.youtube.com": "/watch",
     "sequimelectronics.com": "/",
-    "www.alphaxiv.org": "/abs/",  # FadeBench's alphaXiv page (Paper v1, 2026-11-21)
+    "www.alphaxiv.org": "/",  # FadeBench's alphaXiv page + Becky's alphaXiv profile (2026-11-21)
+    "www.linkedin.com": "/in/",  # Becky's LinkedIn (Contact, 2026-11-21)
+    "openreview.net": "/profile",  # Becky's OpenReview profile (Contact, 2026-11-21)
+    "openversions.com": "/northaven",  # independent claim checks of FadeBench (2026-11-21)
 }
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
