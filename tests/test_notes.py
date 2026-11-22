@@ -7,7 +7,7 @@ import unittest
 
 from util import ROOT, front_matter, read
 
-STATUSES = {"published-finding", "working-note", "idea", "results"}
+STATUSES = {"published-finding", "working-note", "idea", "follow-up"}
 
 
 def note_files():
@@ -44,13 +44,13 @@ class NoteTests(unittest.TestCase):
                 self.assertIsNotNone(tags, "projects must be a [list]")
                 for tag in (t.strip() for t in tags.group(1).split(",")):
                     self.assertIn(tag, ids)
-                # A results note points back at the note it answers (Becky, 2026-11-21, via HB).
+                # A follow-up note points back at the note it answers (Becky, 2026-11-21: label "Follow-up").
                 slugs = {pathlib.Path(n).stem for n in note_files()}
                 if "follows_up" in fm:
                     self.assertIn(fm["follows_up"], slugs, "follows_up must name an existing note's file name")
                     self.assertNotEqual(fm["follows_up"], pathlib.Path(rel).stem)
-                if fm["status"] == "results":
-                    self.assertIn("follows_up", fm, "a results note must say which note it follows up")
+                if fm["status"] == "follow-up":
+                    self.assertIn("follows_up", fm, "a follow-up note must say which note it follows up")
 
     def test_follow_up_links_in_layout(self):
         layout = read("_layouts/note.html")
