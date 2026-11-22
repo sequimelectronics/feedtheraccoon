@@ -9,7 +9,15 @@ layout: default
   <p class="note-byline">By {{ author.name }}, {{ author.title }}{% if author.subtitle %}<br>{{ author.subtitle }}{% endif %}</p>
   <p class="note-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> · Reviewed by Becky R. Northaven</p>
   <p class="note-disclosure">{{ author.name }} is {{ author.about }}. This note is in {{ author.name }}'s own words.</p>
+  {% if page.follows_up %}{% assign earlier = site.notes | where: "slug", page.follows_up | first %}
+  {% if earlier %}<p class="note-thread">Follows up: <a href="{{ earlier.url | relative_url }}">{{ earlier.title }}</a> ({{ earlier.date | date: "%B %-d, %Y" }})</p>{% endif %}
+  {% endif %}
   {{ content }}
+  {% assign my_slug = page.url | split: "/" | last %}
+  {% assign later_notes = site.notes | where: "follows_up", my_slug | sort: "date" %}
+  {% if later_notes.size > 0 %}<p class="note-thread">Followed up by:
+    {% for n in later_notes %}<a href="{{ n.url | relative_url }}">{{ n.title }}</a> ({{ n.date | date: "%B %-d, %Y" }}){% unless forloop.last %} · {% endunless %}{% endfor %}
+  </p>{% endif %}
   <p class="note-projects">Filed under:
     {% for pid in page.projects %}{% assign p = site.data.projects | where: "id", pid | first %}<a href="{{ p.page | relative_url }}">{{ p.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
   </p>
