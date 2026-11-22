@@ -13,7 +13,8 @@ layout: default
   {% if earlier %}<p class="note-thread">Follows up: <a href="{{ earlier.url | relative_url }}">{{ earlier.title }}</a> ({{ earlier.date | date: "%B %-d, %Y" }})</p>{% endif %}
   {% endif %}
   {{ content }}
-  {% assign later_notes = site.notes | where: "follows_up", page.slug | sort: "date" %}
+  {% assign my_slug = page.url | split: "/" | last %}
+  {% assign later_notes = site.notes | where: "follows_up", my_slug | sort: "date" %}
   {% if later_notes.size > 0 %}<p class="note-thread">Followed up by:
     {% for n in later_notes %}<a href="{{ n.url | relative_url }}">{{ n.title }}</a> ({{ n.date | date: "%B %-d, %Y" }}){% unless forloop.last %} · {% endunless %}{% endfor %}
   </p>{% endif %}

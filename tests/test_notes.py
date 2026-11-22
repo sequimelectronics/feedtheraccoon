@@ -55,7 +55,7 @@ class NoteTests(unittest.TestCase):
     def test_follow_up_links_in_layout(self):
         layout = read("_layouts/note.html")
         self.assertIn('where: "slug", page.follows_up', layout)
-        self.assertIn('where: "follows_up", page.slug', layout)
+        self.assertIn('where: "follows_up", my_slug', layout)
 
     def test_note_has_no_duplicate_title_or_byline(self):
         # The note layout prints the title and byline, so the body must not repeat them.
