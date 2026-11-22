@@ -9,7 +9,7 @@ layout: default
   <p class="note-byline">By {{ author.name }}, {{ author.title }}{% if author.subtitle %}<br>{{ author.subtitle }}{% endif %}</p>
   <p class="note-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> · Reviewed by Becky R. Northaven</p>
   <p class="note-disclosure">{{ author.name }} is {{ author.about }}. This note is in {{ author.name }}'s own words.</p>
-  {% if page.follows_up %}{% assign earlier = site.notes | where: "slug", page.follows_up | first %}
+  {% if page.follows_up %}{% capture earlier_url %}/lab-notes/{{ page.follows_up }}/{% endcapture %}{% assign earlier = site.notes | where: "url", earlier_url | first %}
   {% if earlier %}<p class="note-thread">Follows up: <a href="{{ earlier.url | relative_url }}">{{ earlier.title }}</a> ({{ earlier.date | date: "%B %-d, %Y" }})</p>{% endif %}
   {% endif %}
   {{ content }}
