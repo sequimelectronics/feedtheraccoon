@@ -9,7 +9,7 @@ from test_pages import LAUNCH_PAGES
 from test_style import css_body
 
 PLACES = ("forest", "prairie", "cave", "foxrescue")
-PLACEHOLDER_CREDIT = "Placeholder sketch, to be replaced"
+PLACEHOLDER_CREDIT = ""  # Becky 2026-11-27: no "Placeholder sketch" caption; blank until real art
 PAPER = "#FBF4E4"
 
 
@@ -56,7 +56,7 @@ class PlateTests(unittest.TestCase):
         self.assertIn("{% assign plate = site.data.credits[include.place] %}", include)
         self.assertIn('<figure class="plate">', include)
         self.assertIn('<img src="{{ plate.file | relative_url }}" alt="{{ plate.alt }}" width="640" height="360">', include)
-        self.assertIn("<figcaption>{{ plate.credit }}</figcaption>", include)
+        self.assertIn('{% if plate.credit != "" %}<figcaption>{{ plate.credit }}</figcaption>{% endif %}', include)
         self.assertIn("{% if plate %}", include)
         layout = read("_layouts/default.html")
         self.assertIn("{% if page.place %}{% include journal-plate.html place=page.place %}{% endif %}", layout)

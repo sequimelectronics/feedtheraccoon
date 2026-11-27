@@ -2,6 +2,6 @@
 {% if plate %}
 <figure class="plate">
   <img src="{{ plate.file | relative_url }}" alt="{{ plate.alt }}" width="640" height="360">
-  <figcaption>{{ plate.credit }}</figcaption>
+  {% if plate.credit != "" %}<figcaption>{{ plate.credit }}</figcaption>{% endif %}
 </figure>
 {% endif %}

@@ -3,7 +3,7 @@ title: "Contact"
 description: "How to reach Becky R. Northaven about FadeBench, the Debate Hall, and the rest of the work."
 place: foxrescue
 layout: default
-draft_copy: true
+draft_copy: false
 permalink: /contact/
 ---
 

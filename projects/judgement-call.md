@@ -4,6 +4,6 @@ description: "Judgement Call: a small, fast helper that notices when a conversat
 place: foxrescue
 layout: project
 project_id: judgement-call
-draft_copy: true
+draft_copy: false
 permalink: /projects/judgement-call/
 ---

@@ -3,7 +3,7 @@ title: "Projects"
 description: "The projects behind Feed the Raccoon: FadeBench, AI-Beach, Debate Hall, Judgement Call, Mixture-of-Memory and Moments-to-Speak."
 place: forest
 layout: default
-draft_copy: true
+draft_copy: false
 permalink: /projects/
 ---
 
