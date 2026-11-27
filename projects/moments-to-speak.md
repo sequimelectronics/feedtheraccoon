@@ -4,6 +4,6 @@ description: "Moments-to-Speak: written conversations about noticing when someon
 place: cave
 layout: project
 project_id: moments-to-speak
-draft_copy: true
+draft_copy: false
 permalink: /projects/moments-to-speak/
 ---

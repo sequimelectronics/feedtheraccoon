@@ -22,7 +22,7 @@ class ConfigTests(unittest.TestCase):
     def test_notes_collection(self):
         config = read("_config.yml")
         self.assertRegex(config, r"collections:\s*\n\s+notes:\s*\n\s+output: true\s*\n\s+permalink: /lab-notes/:name/")
-        self.assertRegex(config, r"type: notes\s*\n\s+values:\s*\n\s+layout: note\s*\n\s+draft_copy: true")
+        self.assertRegex(config, r"type: notes\s*\n\s+values:\s*\n\s+layout: note\s*\n\s+draft_copy: false")
 
 
 class NoteTests(unittest.TestCase):
@@ -98,7 +98,7 @@ class LayoutTests(unittest.TestCase):
                 self.assertEqual(fm.get("project_id"), p["id"])
                 self.assertEqual(fm.get("permalink"), p["page"])
                 self.assertEqual(fm.get("place"), p["place"])
-                self.assertEqual(fm.get("draft_copy"), "true")
+                self.assertEqual(fm.get("draft_copy"), "false")
         self.assertIn("lab-notes.html project=project.id", read("_layouts/project.html"))
 
     def test_index_pages(self):
@@ -106,7 +106,7 @@ class LayoutTests(unittest.TestCase):
             fm = front_matter(rel)
             with self.subTest(page=rel):
                 self.assertEqual(fm.get("permalink"), permalink)
-                self.assertEqual(fm.get("draft_copy"), "true")
+                self.assertEqual(fm.get("draft_copy"), "false")
 
 
 if __name__ == "__main__":

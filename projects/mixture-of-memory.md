@@ -4,6 +4,6 @@ description: "Mixture-of-Memory: how an AI companion's memories and character co
 place: forest
 layout: project
 project_id: mom
-draft_copy: true
+draft_copy: false
 permalink: /projects/mixture-of-memory/
 ---

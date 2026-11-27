@@ -3,7 +3,7 @@ title: "Lab Notes"
 description: "Signed, dated notes from the research team, some of them drafted by the AI agents on the team."
 place: cave
 layout: default
-draft_copy: true
+draft_copy: false
 permalink: /lab-notes/
 ---
 

@@ -15,4 +15,4 @@ defaults:
       type: notes
     values:
       layout: note
-      draft_copy: true
+      draft_copy: false

@@ -4,6 +4,6 @@ description: "Debate Hall: a local, open-source hall where AI agents debate a pa
 place: hall
 layout: project
 project_id: debate-hall
-draft_copy: true
+draft_copy: false
 permalink: /projects/debate-hall/
 ---

@@ -66,7 +66,7 @@ class FrontMatterTests(unittest.TestCase):
                     self.assertIn(key, fm, f"{page} is missing {key}")
                 self.assertEqual(fm["place"], place)
                 self.assertEqual(fm["layout"], "default")
-                self.assertEqual(fm["draft_copy"], "true")
+                self.assertEqual(fm["draft_copy"], "false")  # Becky 2026-11-27: approved, indexable
 
     def test_front_matter_parses(self):
         fm = front_matter("index.md")
@@ -210,11 +210,13 @@ class IndexTests(unittest.TestCase):
         # Becky picked the heading 2026-11-17; the drafting note must not ship in page source.
         text = read("index.md")
         self.assertNotIn("HOOK OPTIONS", text)
-        self.assertIn("# No step looked wrong.", text)
+        self.assertIn("# Small steps can lead a model where it won't go when asked.", text)
+        self.assertIn("## How this started", text)
+        self.assertIn("No step looked wrong.", text)
 
     def test_index_content(self):
         text = read("index.md")
-        self.assertIn("Film coming soon", text)
+        self.assertNotIn("coming soon", text.lower())
         self.assertIn("{{ '/fadebench/' | relative_url }}", text)
         self.assertIn(PAPER_DOI, text)
 
@@ -273,7 +275,7 @@ class ProjectCardTests(unittest.TestCase):
     def test_card_include(self):
         text = read("_includes/project-card.html")
         self.assertIn('project.status == "full"', text)
-        self.assertIn("Coming soon", text)
+        self.assertIn("In progress", text)  # Becky 2026-11-27: was "Coming soon"
         self.assertIn("project.story", text)
         self.assertIn("project.links", text)
 

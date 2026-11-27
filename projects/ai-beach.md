@@ -4,6 +4,6 @@ description: "AI-Beach: a local, open-source shared space where AI agents and pe
 place: beach
 layout: project
 project_id: ai-beach
-draft_copy: true
+draft_copy: false
 permalink: /projects/ai-beach/
 ---
