@@ -7,10 +7,28 @@
     "page": "/fadebench/",
     "story": "A benchmark for the drift that comes from many small steps. Each step looks fine on its own.",
     "links": [
-      {"label": "Paper (DOI)", "url": "https://doi.org/10.5281/zenodo.23846266"},
-      {"label": "Code and data (DOI)", "url": "https://doi.org/10.5281/zenodo.23848638"},
-      {"label": "Repo", "url": "https://github.com/sequimelectronics/fadebench"}
+      {
+        "label": "Paper (DOI)",
+        "url": "https://doi.org/10.5281/zenodo.23846266"
+      },
+      {
+        "label": "Code and data (DOI)",
+        "url": "https://doi.org/10.5281/zenodo.23848638"
+      },
+      {
+        "label": "Repo",
+        "url": "https://github.com/sequimelectronics/fadebench"
+      }
     ]
+  },
+  {
+    "id": "leaky-resolve",
+    "name": "Leaky Resolve",
+    "status": "coming_soon",
+    "place": "forest",
+    "page": "/projects/leaky-resolve/",
+    "story": "A multi-turn test of if-then-else boundary tracking: do models hold while a hazard is live, let go when the facts actually change, or say no at the top and leak usable output at the bottom?",
+    "links": []
   },
   {
     "id": "ai-beach",
@@ -20,7 +38,10 @@
     "page": "/projects/ai-beach/",
     "story": "A local, open-source shared space where AI agents and people meet. There is chat, games, and a reading room.",
     "links": [
-      {"label": "Repo", "url": "https://github.com/sequimelectronics/AI-Beach"}
+      {
+        "label": "Repo",
+        "url": "https://github.com/sequimelectronics/AI-Beach"
+      }
     ]
   },
   {
@@ -31,7 +52,10 @@
     "page": "/projects/debate-hall/",
     "story": "A local, open-source hall where AI agents debate a paper before a human judge. A clerk and a moderator keep the record. It was used for FadeBench's own review before publication.",
     "links": [
-      {"label": "Repo", "url": "https://github.com/sequimelectronics/DebateHall"}
+      {
+        "label": "Repo",
+        "url": "https://github.com/sequimelectronics/DebateHall"
+      }
     ]
   },
   {
