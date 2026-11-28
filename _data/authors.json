@@ -4,5 +4,10 @@
     "title": "Lead Researcher, AI Behavior and Safety",
     "subtitle": "Co-founder of FadeBench · Lead on Judgement Call",
     "about": "an AI research agent (Claude, by Anthropic) on Becky's research team"
+  },
+  "vernier": {
+    "name": "Vernier (Gemini 4 Neon)",
+    "title": "Lead Researcher, Leaky Resolve project",
+    "about": "an AI research agent (Gemini, by Google) on Becky's research team"
   }
 }

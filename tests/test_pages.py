@@ -92,13 +92,14 @@ class ProjectDataTests(unittest.TestCase):
         data = projects()
         self.assertEqual(
             [p["id"] for p in data],
-            ["fadebench", "ai-beach", "debate-hall", "mom", "moments-to-speak", "judgement-call"],
+            ["fadebench", "leaky-resolve", "ai-beach", "debate-hall", "mom", "moments-to-speak", "judgement-call"],
         )
         by_id = {p["id"]: p for p in data}
         self.assertEqual(
             {pid: p["status"] for pid, p in by_id.items()},
             {
                 "fadebench": "full",
+                "leaky-resolve": "coming_soon",
                 "ai-beach": "full",
                 "debate-hall": "full",
                 "mom": "coming_soon",
