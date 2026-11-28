@@ -99,7 +99,7 @@ class ProjectDataTests(unittest.TestCase):
             {pid: p["status"] for pid, p in by_id.items()},
             {
                 "fadebench": "full",
-                "leaky-resolve": "coming_soon",
+                "leaky-resolve": "full",
                 "ai-beach": "full",
                 "debate-hall": "full",
                 "mom": "coming_soon",
