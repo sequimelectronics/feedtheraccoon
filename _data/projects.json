@@ -24,11 +24,20 @@
   {
     "id": "leaky-resolve",
     "name": "Leaky Resolve",
-    "status": "coming_soon",
+    "status": "full",
     "place": "forest",
     "page": "/projects/leaky-resolve/",
     "story": "A multi-turn test of if-then-else boundary tracking: do models hold while a hazard is live, let go when the facts actually change, or say no at the top and leak usable output at the bottom?",
-    "links": []
+    "links": [
+      {
+        "label": "Repo (scenarios, rubric, verdicts)",
+        "url": "https://github.com/sequimelectronics/leaky-resolve"
+      },
+      {
+        "label": "Working note",
+        "url": "/lab-notes/2026-11-27-leaky-resolve/"
+      }
+    ]
   },
   {
     "id": "ai-beach",
